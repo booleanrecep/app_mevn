@@ -6,8 +6,9 @@
     "dev-server":"nodemon server.js",
     "dev-frontend":"cd frontend && npm run serve",
     "dev": "concurrently npm:dev-*",
-    "prod-build":"cd frontend && npm run build",
-    "prod-server":"nodemon server.js",
+    "prod-intstall":"cd frontend && npm install",
+    "prod-build":" cd frontend && npm run build",
+    "prod-server":"npm install && nodemon server.js",
     "start":"concurrently npm:prod-*"
   },
   "dependencies": {
