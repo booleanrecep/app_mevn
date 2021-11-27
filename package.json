@@ -8,8 +8,7 @@
     "dev": "concurrently npm:dev-*",
     "prod-install":"npm install && cd frontend && npm install && npm run build",
     "prod-server":"nodemon server.js",
-    "start": "concurrently npm:prod-*",
-    "heroku-postbuild":"npm install && cd frontend && npm install && npm run build"
+    "start": "concurrently npm:prod-*"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
