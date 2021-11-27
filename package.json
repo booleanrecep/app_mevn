@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-server":"nodemon server.js",
+    "dev-install-frontend":"cd frontend && npm install",
+    "dev-install-server":"npm install",
     "dev-frontend":"cd frontend && npm run serve",
+    "dev-server":"nodemon server.js",
     "dev": "concurrently npm:dev-*",
     "prod-intstall":"cd frontend && npm install",
     "prod-build":" cd frontend && npm run build",

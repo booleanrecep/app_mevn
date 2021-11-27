@@ -26,7 +26,7 @@ app.use('/api/deleteProvider',deleteProvider)
 app.use('/api/clients',clients)
 app.use('/api/providers',providers)
 
-const PORT = process.env.PORT || 8080 ;
+const PORT = 3000;
 if ( process.env.NODE_ENV !== 'production'){
   app.listen(PORT, () => {
     console.log(`Dev-Server is running on port ${PORT}.`);
