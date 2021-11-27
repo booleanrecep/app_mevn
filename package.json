@@ -3,14 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-install-frontend":"cd frontend && npm install",
-    "dev-install-server":"npm install",
-    "dev-build":"cd frontend && npm run serve",
+    "dev-install":"npm install && cd frontend && npm install && npm run serve",
     "dev-server":"nodemon server.js",
     "dev": "concurrently npm:dev-*",
-    "prod-intstall":"cd frontend && npm install",
-    "prod-build":"cd frontend && npm run build",
-    "prod-server":"npm install && nodemon server.js",
+    "prod-install":"npm install && cd frontend && npm install && npm run build",
+    "prod-server":"nodemon server.js",
     "start": "concurrently npm:prod-*",
     "heroku-postbuild":"npm install && cd frontend && npm install && npm run build"
   },
