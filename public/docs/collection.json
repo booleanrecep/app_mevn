@@ -1,0 +1,270 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "a-pp.herokuapp.com"
+        }
+    ],
+    "info": {
+        "name": "App Documentation",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "b5bf574c-e46d-4f52-9789-abd26ac7d487"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "item": [
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/newClient",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/newClient"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"repellat\",\n    \"email\": \"velit\",\n    \"phone\": \"reprehenderit\",\n    \"providers\": \"quis\"\n}"
+                        },
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/newProvider",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/newProvider"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"dolorem\"\n}"
+                        },
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/editClient",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/editClient"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"_id\": \"suscipit\",\n    \"data\": \"aspernatur\"\n}"
+                        },
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/deleteClient",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/deleteClient"
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"_id\": \"quasi\"\n}"
+                        },
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/deleteProvider",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/deleteProvider"
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"_id\": \"voluptatem\"\n}"
+                        },
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/clients",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/clients"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[\n    {\n        \"_id\": \"61a38315c04d60b605730065\",\n        \"name\": \"Nestor\",\n        \"email\": \"nestor.urquiza@gmail.com\",\n        \"phone\": \"1231231234\",\n        \"providers\": [\n            {\n                \"_id\": \"61a3830dc04d60b605730064\",\n                \"name\": \"NestorP\"\n            },\n            {\n                \"_id\": \"61a38328c04d60b605730066\",\n                \"name\": \"ProviderNwstor\"\n            }\n        ]\n    }\n]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api/providers",
+                            "query": [],
+                            "raw": "https://{{baseUrl}}/api/providers"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": null,
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application/json; charset=utf-8"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[\n    {\n        \"_id\": \"61a2642cd62f725c9602a554\",\n        \"name\": \"p1\"\n    },\n    {\n        \"_id\": \"61a26436d62f725c9602a555\",\n        \"name\": \"p2\"\n    },\n    {\n        \"_id\": \"61a2643ad62f725c9602a556\",\n        \"name\": \"p3\"\n    },\n    {\n        \"_id\": \"61a2643dd62f725c9602a557\",\n        \"name\": \"p4\"\n    },\n    {\n        \"_id\": \"61a27427ce15cec821981fb1\",\n        \"name\": \"p5\"\n    },\n    {\n        \"_id\": \"61a27431ce15cec821981fb2\",\n        \"name\": \"p6\"\n    },\n    {\n        \"_id\": \"61a3830dc04d60b605730064\",\n        \"name\": \"NestorP\"\n    },\n    {\n        \"_id\": \"61a38328c04d60b605730066\",\n        \"name\": \"ProviderNwstor\"\n    }\n]",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

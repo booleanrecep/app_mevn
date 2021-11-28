@@ -18,6 +18,7 @@ const clients = require("./routes/clients")
 const providers = require("./routes/providers")
 
 app.use('/',express.static('./build'))
+app.use('/docs',express.static('./public/docs'))
 app.use('/api/newClient',newClient)
 app.use('/api/newProvider',newProvider)
 app.use('/api/editClient',editClient)

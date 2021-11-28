@@ -1,4 +1,8 @@
 ## <i></>protranslating challange</i>
+### Api docs
+`
+https://a-pp.herokuapp.com/docs
+`
 
 ### Project run dev environment
 ``

@@ -1,0 +1,211 @@
+name: Endpoints
+endpoints:
+  - uri: /api/newClient
+    httpMethods:
+      - POST
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters:
+      name:
+        name: name
+        type: string
+        example: repellat
+        required: true
+        description: ''
+      email:
+        name: email
+        type: string
+        example: velit
+        required: true
+        description: ''
+      phone:
+        name: phone
+        type: string
+        example: reprehenderit
+        required: true
+        description: ''
+      providers:
+        name: providers
+        type: string
+        example: quis
+        required: true
+        description: ''
+    responses: []
+    responseFields: {}
+  - uri: /api/newProvider
+    httpMethods:
+      - POST
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters:
+      name:
+        name: name
+        type: string
+        example: dolorem
+        required: true
+        description: ''
+    responses: []
+    responseFields: {}
+  - uri: /api/editClient
+    httpMethods:
+      - PUT
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters:
+      _id:
+        name: _id
+        type: string
+        example: suscipit
+        required: true
+        description: ''
+      data:
+        name: data
+        type: string
+        example: aspernatur
+        required: true
+        description: ''
+    responses: []
+    responseFields: {}
+  - uri: /api/deleteClient
+    httpMethods:
+      - DELETE
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters:
+      _id:
+        name: _id
+        type: string
+        example: quasi
+        required: true
+        description: ''
+    responses: []
+    responseFields: {}
+  - uri: /api/deleteProvider
+    httpMethods:
+      - DELETE
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters:
+      _id:
+        name: _id
+        type: string
+        example: voluptatem
+        required: true
+        description: ''
+    responses: []
+    responseFields: {}
+  - uri: /api/clients
+    httpMethods:
+      - GET
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters: {}
+    responses:
+      - status: 200
+        description: ''
+        headers:
+          access-control-allow-origin: '*'
+          content-type: application/json; charset=utf-8
+        content: |-
+          [
+              {
+                  "_id": "61a38315c04d60b605730065",
+                  "name": "Nestor",
+                  "email": "nestor.urquiza@gmail.com",
+                  "phone": "1231231234",
+                  "providers": [
+                      {
+                          "_id": "61a3830dc04d60b605730064",
+                          "name": "NestorP"
+                      },
+                      {
+                          "_id": "61a38328c04d60b605730066",
+                          "name": "ProviderNwstor"
+                      }
+                  ]
+              }
+          ]
+    responseFields: {}
+  - uri: /api/providers
+    httpMethods:
+      - GET
+    metadata:
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: {}
+    queryParameters: {}
+    bodyParameters: {}
+    responses:
+      - status: 200
+        description: ''
+        headers:
+          access-control-allow-origin: '*'
+          content-type: application/json; charset=utf-8
+        content: |-
+          [
+              {
+                  "_id": "61a2642cd62f725c9602a554",
+                  "name": "p1"
+              },
+              {
+                  "_id": "61a26436d62f725c9602a555",
+                  "name": "p2"
+              },
+              {
+                  "_id": "61a2643ad62f725c9602a556",
+                  "name": "p3"
+              },
+              {
+                  "_id": "61a2643dd62f725c9602a557",
+                  "name": "p4"
+              },
+              {
+                  "_id": "61a27427ce15cec821981fb1",
+                  "name": "p5"
+              },
+              {
+                  "_id": "61a27431ce15cec821981fb2",
+                  "name": "p6"
+              },
+              {
+                  "_id": "61a3830dc04d60b605730064",
+                  "name": "NestorP"
+              },
+              {
+                  "_id": "61a38328c04d60b605730066",
+                  "name": "ProviderNwstor"
+              }
+          ]
+    responseFields: {}
