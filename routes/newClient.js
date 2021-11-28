@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const connectToDatabase = require('../db_utils/index')
-const Clients =  require('../db_utils/models/clients')
-
+const Client =  require('../db_utils/models/client')
 
 router.post('/',async function (req, res) {
-    const newClient = new Clients({
+    const newClient = new Client({
         name:req.body.name,
         email:req.body.email,
         phone:req.body.phone,

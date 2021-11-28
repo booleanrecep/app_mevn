@@ -10,9 +10,7 @@
     "dev-install":"npm install && cd frontend && npm install && npm run start",
     "dev-server":"nodemon server.js",
     "dev": "concurrently npm:dev-*",
-    "prod-install-server":"npm install",
-    "prod-install-frontend":"cd frontend && npm install",
-    "prod-build-frontend":"cd frontend && npm run build",
+    "prod-install":"npm install && cd frontend && npm install && npm run build",
     "prod-server":"nodemon server.js",
     "start": "concurrently npm:prod-*"
   },

@@ -113,79 +113,7 @@ export default {
 
 <style lang="scss" scoped>
 .edit-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  backdrop-filter: blur(2px);
   .edit-box {
-    width: 450px;
-    border: 2px solid #dcdcdc;
-    // padding: 12px;
-    margin: 0 auto;
-    background: white;
-    overflow: hidden;
-    position: static;
-    margin: 70px auto;
-    // left: 30%;
-    top: 5%;
-    h4 {
-      color: #436d87;
-      padding: 12px;
-    }
-    .input-group {
-      width: 350px;
-      margin: 0 auto;
-      label {
-        display: flex;
-        align-items: center;
-        p {
-          width: 85px;
-          margin: 5px;
-          text-align-last: end;
-        }
-        input {
-          height: fit-content;
-          width: 100%;
-          outline: none;
-        }
-        button {
-          margin: 0 0 0 5px;
-          width: 190px;
-        }
-      }
-    }
-    ul {
-      list-style: none;
-      margin-left: 28%;
-      border: 1px solid #dcdcdc;
-      width: 200px;
-      padding: 6px;
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        label {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          span {
-            margin: 0 0 0 10px;
-          }
-        }
-        .button-group {
-          width: 80px;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          .icon {
-            cursor: pointer;
-          }
-        }
-      }
-    }
-
     .footer {
       display: flex;
       justify-content: flex-end;

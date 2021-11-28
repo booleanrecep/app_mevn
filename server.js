@@ -32,7 +32,7 @@ if ( process.env.NODE_ENV !== 'production'){
     console.log(`Dev-Server is running on port ${PORT}.`);
   });
 } else {
-app.listen(PORT, () => {
-  console.log(`Prod-Server is running on port ${PORT}.`);
-});
+  app.listen(PORT, () => {
+    console.log(`Prod-Server is running on port ${PORT}.`);
+  });
 }

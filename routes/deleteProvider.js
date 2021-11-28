@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const connectToDatabase = require('../db_utils/index')
 const { ObjectId } = require('bson');
-
+const connectToDatabase = require('../db_utils/index')
 
 router.delete('/',async function (req, res) {
     const { db } = await connectToDatabase()

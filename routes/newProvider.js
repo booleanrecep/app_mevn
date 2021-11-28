@@ -3,7 +3,6 @@ const router = express.Router();
 const connectToDatabase = require('../db_utils/index')
 const Provider =  require('../db_utils/models/provider')
 
-
 router.post('/',async function (req, res) {
     const newProvider = new Provider({
         name:req.body.name,

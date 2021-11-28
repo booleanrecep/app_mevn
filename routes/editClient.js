@@ -1,9 +1,7 @@
-const { ObjectId } = require('bson');
 const express = require('express');
 const router = express.Router();
+const { ObjectId } = require('bson');
 const connectToDatabase = require('../db_utils/index')
-const Clients =  require('../db_utils/models/clients')
-
 
 router.put('/',async function (req, res) {
     

@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const  { Schema, model, Types } =  mongoose;
 
-const clientsSchema = Schema({ 
+const clientSchema = Schema({ 
   id: {
     type:Types.ObjectId,
     required:false
@@ -32,4 +32,4 @@ const clientsSchema = Schema({
   ]
  });
 
- module.exports = model('Clients', clientsSchema);
+ module.exports = model('Client', clientSchema);

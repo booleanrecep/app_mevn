@@ -125,13 +125,11 @@ export default {
   .edit-box {
     width: 450px;
     border: 2px solid #dcdcdc;
-    // padding: 12px;
     margin: 0 auto;
     background: white;
     overflow: hidden;
     position: static;
     margin: 70px auto;
-    // left: 30%;
     top: 5%;
     h4 {
       color: #436d87;

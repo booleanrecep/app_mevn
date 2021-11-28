@@ -1,7 +1,6 @@
 const express = require('express');
-const connectToDatabase = require('../db_utils/index')
 const router = express.Router();
-
+const connectToDatabase = require('../db_utils/index')
 
 router.get('/',async function (req, res) {
     const { db } = await connectToDatabase()
