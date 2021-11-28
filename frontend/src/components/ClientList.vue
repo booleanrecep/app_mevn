@@ -30,7 +30,6 @@ export default {
       this.$store.dispatch("getClients");
     },
   },
-
 };
 </script>
 

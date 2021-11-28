@@ -39,13 +39,13 @@ export default {
   },
   data() {
     return {
-      loading: true
+      loading: true,
     };
   },
   computed: {
     clients() {
       return this.$store.state.clients;
-    },    
+    },
   },
   mounted() {
     this.$store.dispatch("getClients");
@@ -53,9 +53,9 @@ export default {
   },
   updated() {
     this.loading = false;
-    const bool1 = this.$store.state.isNewModalOpen
-    const bool2 = this.$store.state.isEditModalOpen
-    if(this.loading&&(bool1||bool2)){
+    const bool1 = this.$store.state.isNewModalOpen;
+    const bool2 = this.$store.state.isEditModalOpen;
+    if (this.loading && (bool1 || bool2)) {
       this.$store.dispatch("getClients");
     }
   },
@@ -69,8 +69,8 @@ export default {
 
 <style lang="scss">
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .container {
   .top {

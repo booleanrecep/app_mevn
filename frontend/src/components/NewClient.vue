@@ -26,7 +26,11 @@
         <ul>
           <li v-for="p in providers" :key="p._id">
             <label>
-              <input type="checkbox" :value="p" v-model="state.providersModel" />
+              <input
+                type="checkbox"
+                :value="p"
+                v-model="state.providersModel"
+              />
               <span>{{ p.name }}</span>
             </label>
             <div class="button-group">
@@ -53,7 +57,7 @@ export default {
   components: { Icon, Spinner },
   data() {
     return {
-      state:{
+      state: {
         name: [],
         email: [],
         phone: [],
@@ -98,7 +102,7 @@ export default {
         email: [],
         phone: [],
         providersModel: [],
-      }
+      };
     },
     cancelAdd() {
       this.$store.dispatch("toggleNewModal", false);

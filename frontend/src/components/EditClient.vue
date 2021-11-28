@@ -15,7 +15,7 @@
           </label>
           <label>
             <p>Phone:</p>
-            <input type="tel" v-model="clientToEdit.phone"  />
+            <input type="tel" v-model="clientToEdit.phone" />
           </label>
           <label>
             <p>Providers:</p>
@@ -26,12 +26,7 @@
         <ul>
           <li v-for="p in providers" :key="p._id">
             <label>
-              <input
-                type="checkbox"
-                :value="p"
-                v-model="providersModel"
-                
-              />
+              <input type="checkbox" :value="p" v-model="providersModel" />
               <span>{{ p.name }}</span>
             </label>
             <div class="button-group">
@@ -39,11 +34,11 @@
               <Icon @click.prevent="deleteProvider(p._id)" icon="trash" />
             </div>
           </li>
-          <Spinner v-if="addedProvider" size="small"/>
+          <Spinner v-if="addedProvider" size="small" />
         </ul>
         <hr />
         <div class="footer">
-          <button :id="id" @click="deleteClient($event)" class="left">
+          <button @click.prevent="deleteClient" class="left">
             Delete Client
           </button>
           <div class="right">
@@ -75,9 +70,9 @@ export default {
     isEditModalOpen() {
       return this.$store.state.isEditModalOpen;
     },
-    clientToEdit() {     
-      return this.$store.state.clientToEdit
-    }
+    clientToEdit() {
+      return this.$store.state.clientToEdit;
+    },
   },
   mounted() {
     this.$store.dispatch("getProviders");
@@ -95,26 +90,27 @@ export default {
 
     saveClient() {
       const editClient = {
-        _id:this.clientToEdit._id,
-        data:{
+        _id: this.clientToEdit._id,
+        data: {
           name: this.clientToEdit.name,
           email: this.clientToEdit.email,
           phone: this.clientToEdit.phone,
           providers: this.providersModel,
-        }
+        },
       };
       this.$store.dispatch("editClient", editClient);
       this.$store.dispatch("getClients");
       this.$store.dispatch("toggleEditModal", false);
-      this.providersModel = []
+      this.providersModel = [];
     },
     cancelEdit() {
       this.$store.dispatch("toggleEditModal", false);
     },
-  },
-  deleteClient(event) {
-    this.$store.dispatch("deleteClient", event.target.id);
-    this.$store.dispatch("getClients");
+    deleteClient() {
+      this.$store.dispatch("deleteClient", this.clientToEdit._id);
+      this.$store.dispatch("toggleEditModal", false);
+      this.$store.dispatch("getClients");
+    },
   },
 };
 </script>

@@ -1,12 +1,12 @@
 import { createStore } from "vuex";
-import {mutations} from "./mutations"
-import {actions} from "./actions"
+import { mutations } from "./mutations";
+import { actions } from "./actions";
 const state = {
   clients: [],
   providers: [],
   isClientAdded: [],
   isClientDeleted: [],
-  isClientEdited:[],
+  isClientEdited: [],
   isProviderAdded: [],
   isProviderDeleted: [],
   clientToEdit: [],
@@ -14,8 +14,7 @@ const state = {
   isEditModalOpen: false,
 };
 
-const getters = {
-};
+const getters = {};
 
 export default createStore({
   state,
